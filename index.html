@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="shorcut icon" href="HelloKittyBow.png">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    function validate(){
+      var username = document.suggestchar.uname.value;
+      var namec = document.suggestchar.name.value;
+      if(username==""||namec=="")
+      {
+        alert("Fill all the fields")
+      }
+      else{
+        alert("Form submitted successfully")
+      }
+}
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>Popular Sanrio Characters</h1>
+      </div>
+      <ul class = "nav-bar">
+        <li><a href="index.html" class="active"><b>Home</b></a></li>
+        <li><a href="HelloKitty.html"> <b>Hello Kitty</b></a></li>
+        <li><a href="MyMelody.html"><b>My Melody</b></a></li>
+        <li><a href="Cinnamoroll.html"><b>Cinnamoroll</b></a></li>
+      </ul>
+    </header>
+    <div class="subheading">
+      <h1>Top 3 Sanrio Characters</h1>
+    </div>
+    <div>
+        <table class="table">
+          <tr>
+            <td>
+            <img src="HelloKitty2.webp" width="150" height="200">
+            </td>
+            <td></td>
+            <td>
+              <img src="mymelody2.webp" width="150" height="200">
+            </td>
+          </tr>
+          <tr>
+            <td style="font-family:Lucida Calligraphy;"><a href="HelloKitty.html">Hello Kitty</a>
+            </td>
+            <td></td>
+            <td style="font-family:Lucida Calligraphy;"><a href="MyMelody.html">My Melody</a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><img src="cinnamoroll5.webp" width="180" height="200">
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="font-family:Lucida Calligraphy;">
+              <a href="Cinnamoroll.html">Cinnamoroll</a>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+    </div>
+    <div class = "content">
+      <form name="suggestchar">
+        <fieldset>
+          <legend>Suggest our next character!</legend>
+        <table>
+        <tr>
+        <td><label> Username:</label></td>
+        <td><input type="text" name="uname"><br/></td>
+      </tr>
+      <tr>
+        <td><label>Name of Character:</label></td>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" value="Submit" onclick="validate();"><td>
+      </tr>
+      </table>
+    </fieldset>
+      </form>
+    </div>
+    <footer>
+      Copyright &copy; Sarah Cook and Jenna De La Garza
+    </footer>
+  </body>
+</html>
